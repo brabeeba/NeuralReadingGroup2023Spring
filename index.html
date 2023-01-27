@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<title>Neural Algorithms</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+    	<!-- Le styles -->
+    	<link href="../personal_site/css/bootstrapFlatly.min.css" rel="stylesheet">
+    	<style>
+      	body {
+        	/*padding-top: 60px;  60px to make the container go all the way to the bottom of the topbar */
+      	}
+    	</style>
+    	<link href="../personal_site/css/bootstrap-responsive.min.css" rel="stylesheet">
+    	<link href="../personal_site/css/main.css" rel="stylesheet">
+	</head>
+	<body>
+	<div class="container">
+	<div class="row-fluid">
+	  <h3>Neural Algorithms Reading Group</h3>
+   </div>
+	<div class="row-fluid voffset1">
+      	<span class="icon-time"></span><strong>Time:</strong> Fridays 11am-12:30pm, Spring Semester 2020 (first Meeting 2/14)
+	</div>
+	 <div class="row-fluid voffset1">
+	  <span class="icon-map-marker"></span><strong>Location:</strong> Stata G451 (excpet on 3/6 on G825 and 4/10 on D507) <br>
+	  
+	  <div style="margin-top: 5px;">(Take G tower elevator to 4th floor and follow signs to room G451.)</div>
+	</div>
+	 <div class="row-fluid voffset1">
+	  <span class="icon-envelope"></span><strong>Organizers:</strong> Nancy Lynch (lynch at csail dot mit dot edu), Mien Brabeeba Wang (brabeeba at mit dot edu), Lili Su (lilisu3 at csail dot mit dot edu)<br>
+	</div>
+	<a href="http://www.cameronmusco.com/neuralReadingGroup/">Last year's reading group website</a>
+<div class="row-fluid voffset1">
+	<div class="col-md-10 colp-lg-8" >
+   		<img src="./triple.png" class="img-rounded img-responsive" alt="my photo">
+</div>
+  <div class="row voffset1">
+    <div class="col-md-12">
+      <section id="publications">
+      	<h3>Background reading/watching</h3>
+      	<ul>
+      		<li>
+      			<a href="https://b-ok.cc/book/2477222/4a05ed">Principles of Neural Science</a>
+      		</li>
+      		<li>
+      			<a href="https://nancysbraintalks.mit.edu/">Nancy Kanwisher online course</a>
+      		</li>
+      		<li>
+      			<a href="https://computationandbrain.github.io/about/">Christos Papadimitriou on-line course ("Computation and the Brain")</a>
+      		</li>
+      		<li>
+      			<a href="http://cseweb.ucsd.edu/~dasgupta/254-neural-ul/index.html">Sanjoy Dasgupta’s course (“Neurally-inspired unsupervised learning")</a>
+      		</li>
+      		<li>
+      			<a href="https://www.frontiersin.org/research-topics/39/spike-timing-dependent-plasticity">Reviews on Spike-timing dependent plasticity</a>
+      		</li>
+      	</ul>
+
+
+        <h3>(Tentative) Schedule</h3>
+		
+		<p>(2/14) Overview and planning:  Nancy Lynch
+			<ul>
+			<li>Goals, overview of topics</li>
+			<li>Planning topics, assigning papers/books to present</li>
+			<li>Review of learning rules:
+				<ul>
+					<li> Short-term vs. long-term learning:  Setting up firing patterns vs. 
+changing edge weights.</li>
+<li> Local learning rules, vs. global optimization</li>
+<li> Supervised and unsupervised learning</li>
+<li>Hebbian learning in rate-based networks and SNNs, Oja, Other rules?  Hopfield network material?</li>
+				</ul>
+
+			</li>
+			<strong>Source:</strong>
+			<ul>
+				<li><a href="https://page.mi.fu-berlin.de/rojas/neural/">Neural Networks---A Systematic Introduction</a>, Chapters 5, 13, 14.</li>
+				<li><a href="./oja1992.pdf">Oja, Principal Components, Minor Components, and Linear Neural Networks</a></li>
+				<li><a href="./oja1989.pdf">Oja, Neural Networks, Principal Components, and Subspaces</a> </li>
+			</ul>
+			<strong>What was presented:</strong>
+			<ul>
+				<li>Overview of brain algorithms.  </li>
+				<li>Assignment of papers.</li>
+				<li> <a href="./meeting1.pdf">Nancy's meeting note</a>
+			
+				</li>
+			</ul>
+		</ul>
+		</p>
+		
+		<p>(2/21) Short-term learning:  Cameron Musco
+			<ul>
+				<strong>To read:</strong>
+				<ul>
+			<li><a href="https://drops.dagstuhl.de/opus/volltexte/2020/11708/pdf/LIPIcs-ITCS-2020-23.pdf">Hitron, Lynch, Musco, Parter. Random Sketching, Clustering, and Short-Term Memory in Spiking Neural Networks. ITCS, January 2020.</a>
+			</li>
+		</ul>
+		<strong>What was presented:</strong>
+		<ul>
+			<li>Overview of the renaming paper by Cameron</li>
+		</ul>
+		
+		</ul>
+		</p>
+		
+		<p>(2/28) Oja's rule, analysis:  Brabeeba Wang and Chi-Ning Chou
+			<ul>
+				<strong>To read:</strong>
+				<ul>
+			<li> <a href="https://arxiv.org/pdf/1911.02363.pdf">Chou, Wang. ODE-Inspired Analysis for the Biological Version of Oja's Rule in Solving Streaming PCA with For-All-Time Guarantee.</a>
+			</li>
+		</ul>
+		<strong>What was presented:</strong>
+		<ul>
+			<li>Overview of the Oja's rule by Chi-Ning and Brabeeba</li>
+			<li><a href="Theory and implementation of infomax filters for the retina.pdf">Haft and Hemmen. Theory and implementation of infomax filters for the retina. 1998.</a></li>
+			<li>Biological plausibility and inplausibility of Oja's rule. <a href="cooper.pdf"></a>BCM rule review.</li>
+			<li><a href="./oja1992.pdf">Oja, Principal Components, Minor Components, and Linear Neural Networks</a></li>
+			<li><a href="https://arxiv.org/pdf/1503.00669.pdf">Cengiz Pehlevan, Tao Hu, Dmitri B. Chklovskii. A Hebbian/Anti-Hebbian Neural Network for Linear Subspace Learning: A Derivation from Multidimensional Scaling of Streaming Data. 2015</a></li>	
+			
+		</ul>
+		
+		</ul>
+		</p>
+		<p>(3/6) Coronavirus. Postpone meeting for a week and all the subsequent meetings are conducted over Zoom.
+		</p>
+
+		<p>(3/13) Valiant's work:  Nishanth Dikkala 
+			<ul>
+							<strong>To read:</strong>
+							<ul>
+								<li>Basic neuroid model and how it represents and learns concepts, for long-term learning.</li>
+								<li>Limitations on memory capacity.</li>
+								<li>Circuits of the Mind</li>
+							</ul>
+							<strong>What was presented:</strong>
+							<ul>
+								<li><a href="./neuroidal-model.pptx">Slides</a></li>
+								<li>Basic neuroid model and algorithms to solve memorization task</li>
+								<li>Inductive learning will be spilled over to next week</li>
+							</ul>
+		
+		</ul>
+
+		</p>
+		
+		<p>(3/20) Valiant, cont'd:  Nishanth Dikkala, Quanquan
+			<ul>
+				<strong>To read:</strong>
+				<ul>
+
+					<li>Circuits of the Mind. Continued.</li>
+					<li><a href="http://amygdala.psychdept.arizona.edu/Jclub/Valiant_2005.pdf">Valiant. Memorization and association on a realistic neural model. Neural Computation, 2006</a> </li>
+					
+				</ul>
+				<strong>What was presented:</strong>
+							<ul>
+								<li><a href="./memorization-association.pptx">Slides</a></li>
+								<li>Learning linear threshold function and numerical calculation</li>
+								<li>A model to support memorization and association using random graph theory</li>
+							</ul>
+				
+			</ul>
+		</p>
+		<p>(3/27) Valiant, cont'd.  Papadimitriou.  Quanquan, Jiajia
+			<ul>
+			<strong>To read:</strong>
+			<ul>
+				<li><a href="https://people.seas.harvard.edu/~valiant/Hippocampus.pdf">Valiant. The Hippocampus as a Stable Memory Allocator for Cortex. Neural Computation, 2012</a> </li>
+				<li><a href="http://proceedings.mlr.press/v40/Papadimitriou15.pdf">Papadimitriou, Vempala. Cortical Learning via Prediction. JMLR 2015</a> </li>
+	
+			</ul>
+			<strong>What was presented:</strong>
+							<ul>
+								<li><a href="./HippoSMA.pptx">Hippocampus slide</a></li>
+								<li><a href="./PJOIN.pptx">predictive join slide</a></li>
+								<li>Finish Valiant's memorization and association paper</li>
+								<li>Finish hippocampus as a stable memory allocator</li>
+							</ul>
+			
+				</ul>
+		</p>
+		
+			
+		<p>(4/3)Papadimitriou papers:  Shankha
+			<ul>
+			<strong>To read:</strong>
+			<ul>
+				<li><a href="https://igi-web.tugraz.at/PDF/LNCS-10000-Theories_006_v1.pdf">Maass, Papadimitriou, Vempala, Legenstein. Brain Computation:  A Computer Science Perspective.</a> </li>
+				<li><a href="https://www.biorxiv.org/content/10.1101/869156v1.full.pdf">Papadimitriou, Vempala, Mitropolsky, Collins, Maass. Brain Computation by Assemblies of Neurons. BioRxiv.</a> </li>
+				<li><a href="https://drops.dagstuhl.de/opus/volltexte/2018/8359/pdf/LIPIcs-ITCS-2018-57.pdf">Legenstein, Maass, Papadimitriou, Vempala. Long Term Memory and the Densest K-Subgraph Problem. ITCS 2018</a> </li>
+			</ul>
+			<strong>What was presented:</strong>
+				<ul>
+					<li>Finish Papadimitriou's papers</li>
+				</ul>
+			
+		</ul>
+		</p>
+		<p>(4/10) Papadimitriou papers:  Papadimitriou
+			<ul>
+				<strong>To read:</strong>
+				<ul>
+				<li><a href="MIT2020.pptx">Slides</a> </li>
+				<li><a href="https://www.cc.gatech.edu/~vempala/papers/assemblies.pdf">Papadimitriou, Vempala. Random Projection in the Brain and Computation with Assemblies of Neurons. ITCS 2019</a> </li>
+
+			</ul>
+			<strong>What was presented:</strong>
+				<ul>
+					<li><a href="MIT2020.pptx">Slides</a> </li>
+				</ul> 
+		</ul>
+		</p>
+
+		
+		<p>(4/17) Other Papadimitriou work:  Brabeeba
+			<ul><strong>To read:</strong>
+				<ul>
+					<li><a href="https://www.biorxiv.org/content/10.1101/188938v2.full.pdf">Pokorny, Ison, Rao, Legenstein Papa., Maass. STDP forms associations between memory traces in networks of spiking neurons</a> </li>
+					<li><a href="https://arxiv.org/pdf/1606.04876.pdf">Papa. On the optimality of grid cells. ArXiv 2016</a> </li>
+					
+			</ul>
+			<strong>What was presented:</strong>
+				<ul>
+					<li><a href="./grid&stdp.pdf">Slides</a> </li>
+				</ul> 
+
+			
+		</ul>
+		</p>
+		<p>(4/24) Connections with Artificial Neural Networks:  Lili Su, Jiajia
+			<ul>
+				<strong>To read:</strong>
+				<ul>
+					<li>Relating gradient descent algorithms to biological algorithms.</li>
+				<li>Simulating gradient descent with local algorithms.</li>
+				
+				<strong>Main papers</strong>
+				<li><a href="https://arxiv.org/pdf/2002.10378.pdf">Shanshan Qin,  Nayantara Mudur, Cengiz Pehlevan. Supervised Deep Similarity Matching.</a></li>
+				<li><a href="https://arxiv.org/pdf/1908.01867.pdf">Pehlevan, Chklovskii: Neuroscience-inspired online unsupervised learning algorithms</a> and the <a href="https://ieeexplore.ieee.org/document/8887559">journal version</a> </li>	
+				<strong>Other papers</strong>
+				<li><a href="https://arxiv.org/pdf/1902.01429.pdf">Pehlevan. A Spiking Neural Network with local learning rules derived from nonnegative similarity matching. ArXiv 1902.01429v2, 2019</a> </li>
+<li><a href="https://arxiv.org/pdf/1703.07914.pdf">Pehlevan, Sengupta, Chklovskii. Why do similarity matching objectives lead to Hebbian/anti-Hebbian networks? Neural Computation 30, 2018</a> </li>
+<li><a href="https://arxiv.org/pdf/1808.02083.pdf">Giovannucci, Minden, Pehlevan, Chklovskii. Efficient principal subspace projection of streaming data through fast similarity matching. ArXiv 1808.02083v1, 2018</a> 
+</li>
+<li><a href="https://arxiv.org/pdf/1810.06966.pdf"> Minden, Pehlevan, Chklovskii. Biologically plausible online principal component analysis without recurrent neural dynamics. ArXiv 1810.06966v2, 2018</a></li>
+
+						
+			</ul>
+			<strong>What was presented:</strong>
+				<ul>
+					<li><a href="./Chklovskii_Paper.pdf">Slides</a> </li>
+				</ul> 
+
+			
+		</ul>
+		
+		</p>
+		<p>(5/1) Learning of logically structured concepts:  Nancy Lynch, Frederik, Shankha
+			<ul>
+				<strong>To read:</strong>
+				<ul>
+					<strong>Main papers</strong>
+					
+					<li><a href="https://arxiv.org/pdf/1909.04559.pdf">Lynch and Mallmann-Trenn. Learning Hierarchically Structured Concepts.</a></li>
+					<strong>Background</strong>
+					<li><a href="https://arxiv.org/pdf/1603.00988.pdf">Mhaskar, Liao, Poggio. Learning functions:  When is deep better than shallow?. arXiv 2016</a> </li>
+					<li><a href="https://arxiv.org/pdf/1711.05611.pdf">Zhou, Bau, Oliva, Torralba. Interpreting deep visual representations via network dissection. arXiv 2017. </a> </li>
+						
+						<li>Hubel and Wiesel. Receptive fields of single neurons in the cat's striate cortex. J. Physiology 1959.</li>
+						<li>Hubel and Wiesel. Receptive fields, binocular interaction, and functional architecture in the cat's visual cortex. J. Physiology 1962.</li>
+						<li>Felleman and van Essen. Distributed hierarchical processing in the primate cerebral cortex. Cerebral cortex, 1991.</li>
+					
+					<strong>Language</strong>
+					<li><a href="https://www.amazon.com/Language-Our-Brain-Uniquely-Capacity-ebook/dp/B077GKZLCK">Friederici. Language in our brain </a> </li>
+					<li><a href="https://arxiv.org/pdf/1705.03919.pdf">Stern, Andreas, Klein.  A Minimum Span-Based Neural Constituency Parser.</a> </li>
+					
+				</ul>
+				<strong>What was presented:</strong>
+				<ul>
+					<li><a href="Brain-Reading-Group-2020-Language.pdf">Language Slides</a> </li>
+					<li><a href="Brain-Reading-Group.pdf">Hierachical Slides</a> </li>
+				</ul> 
+		
+			</ul>
+		</p>
+		<p>(5/8)  Language continued: Frederik; Mathematics and biology of the retina:  Brabeeba Wang, Chi-Ning-Chou
+			<ul>
+				<strong>To read:</strong>
+				<ul>
+					
+					<li><a href="https://meisterlab.caltech.edu/documents/48-baccus_2002_contrast_adaptation">Baccus, SA, Meister, M (2002) Fast and slow contrast adaptation in retinal circuitry. Neuron 36:909–919. </a> </li>
+					<li><a href="https://meisterlab.caltech.edu/documents/40-hosoya_2005_dynamic.pdf">Hosoya, T, Baccus, SA, Meister, M (2005) Dynamic predictive coding by the retina. Nature 436:71–77.</a></li>
+					<li><a href="https://meisterlab.caltech.edu/documents/27-gollisch_2010_retinal_computation.pdf">Gollisch, T, Meister, M (2010) Eye smarter than scientists believed: Neural computations in circuits of the retina. Neuron 65:150–164.</a></li>
+					<li><a href="./baccaus2012.pdf">Ozuysal, Y. & Baccus, S. A. Linking the computational structure of variance adaptation to biophysical mechanisms. Neuron 73, 1002–1015 (2012).</a> </li>
+				</ul>
+				<strong>What was presented:</strong>
+				<ul>
+					<li><a href="Friederic.pdf">Language Slides</a> </li>
+					<li><a href="Retina.pdf">Retina Slides</a></li>
+				</ul> 
+		
+			</ul>
+			<a href="https://accessibility.mit.edu/">Accessibility</a>
+		
+	<!--	<h4><strong>Unscheduled but need/want to fit in somewhere</strong></h4>
+		<p>
+			<ul>
+				<li><a href="https://igi-web.tugraz.at/people/maass/psfiles/154.pdf">What Can a Neuron Learn with Spike-Timing-Dependent Plasticity?</a> Brabeeba might be interested in presenting.
+			<li><a href="https://arxiv.org/abs/1803.09574">Long short-term memory and learning-to-learn in networks of spiking neurons</a>, Quanquan?</li>
+			<li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004347">Decreasing-Rate Pruning Optimizes the Construction of Efficient and Robust Distributed Networks</a>, Navlakha, Barth, Bar-Joseph.</li>
+			<li>Other learning papers people are interested in?</li>
+			</ul>
+		</p>-->
+	  </section>
+	</div>
+</div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../personal_site/js/jquery-1.11.1.min.js"></script>
+    <script src="../personal_site/js/bootstrap.min.js"></script>
+
+</div>
+</body>
+</html>
